@@ -7,7 +7,6 @@ function finish(){
     let validator
     let counter = 0
     let answers = [ 'q1' , 'q6' , 'q12' , 'q13' , 'q17' , 'q22' , 'q27' , 'q32' , 'q36' , 'q37' , 'q42' , 'q47' , 'q51' , 'q55' , 'q58' , 'q62' , 'q66' , 'q71' , 'q76' , 'q79' ]
-    let final   = document.querySelector('section#final')
 
     for ( x=0 ; x<20 ; x++ ) { //VERIFICA AS QUESTÕES QUE FORAM ACERTADAS
         if ( validator = document.getElementById(answers[x]).checked == true )
@@ -42,7 +41,7 @@ function finish(){
 
     //CRIAR TÍTULO (REGULAMENTOS)
     var create_th2   = document.createElement('th')     
-    var th2_data     = document.createTextNode('Regulamentos')
+    var th2_data     = document.createTextNode('Regulamentos de Tráfego Aéreo')
     create_th2.appendChild(th2_data)
     create_th2.setAttribute('colspan', 2);
     document.getElementById('row2').appendChild(create_th2)
@@ -57,7 +56,7 @@ function finish(){
     var create_td   = document.createElement('td')
     var create_td2  = document.createElement('td')
     var td_acertos  = document.createTextNode('Respostas Corretas')
-    var td_erros    = document.createTextNode('Respostas Corretas')
+    var td_erros    = document.createTextNode('Respostas Erradas')
     create_td.appendChild(td_acertos)
     create_td2.appendChild(td_erros)
     create_td2.setAttribute('id' , 'wrong_answers')

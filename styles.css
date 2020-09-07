@@ -56,17 +56,26 @@ p {
 }
 
 
-#questions_container{
-    position: absolute;
+#reg{
+    position: relative;
 }
 
-#questions_container div{
+#questions_container {
+    position:            absolute;
+}
+
+#questions_container div {
      width:              1300px;
      background-color:   #edeff5;
      padding:            20px 50px 40px 50px; /*100px + MAIN PROBLEM - DIVS*/ 
      margin:             0px 0px 30px 0px;
      border-radius:      10px;
      box-shadow:         2px 2px 5px #30323a;
+}
+
+#questions_container a{
+    display: inline-block;
+    width: 25px;
 }
 
 
@@ -88,54 +97,44 @@ p {
 }
 
 
-table{
-     width:              1300px; 
-     padding:            70px;
-     background-color:   #edeff5;
-     border-radius:      10px;
-     box-shadow:         2px 2px 5px #30323a;
+#results{
+    position:            absolute;
+    top:                 7500px;
+    width:               1700px;
+}
+
+table {
+    width:               1400px; 
+    border-collapse:     collapse;
+    box-shadow:          0px 0px 5px black;
+    margin:              0 0 70px 0;
 }
  
 th {
     color:               #f1f3f8;
     background-color:    #393b44;
     padding:             10px 50px 10px 50px;
+    border:              1px solid black; 
 }
  
 td {
-     background-color:   #97d8ec;
-     border:             1px solid black;   
-     padding:            10px;
-     text-align:         center;
-     color:              #321d2f;
+    background-color:    #97d8ec;
+    border:              1px solid black;   
+    padding:             10px;
+    text-align:          center;
+    color:               #321d2f;
 }
 
 #wrong_answers {
-     background-color:   #74bbca;
-}
-
-#materias {
-     border-top-left-radius:     20px;
-     border-top-right-radius:    20px;
+    background-color:    #74bbca;
 }
 
 #bottom-left {
-    border-bottom-left-radius:   20px;
+    width:               50%;
 }
 
 #bottom-right {
-     border-bottom-right-radius: 20px;
-     background-color:           #74bbca;
-     color:                      #321d2f;
-}
-
-#results{
-    background-color: khaki;
-    padding: 0px 100px 0 100px; /* */
-    width: 1300px;
-}
-
-#results table{
-    position: absolute;
-    top: 5000px;
+    background-color:    #74bbca;
+    color:               #321d2f;
+    width:               50%;
 }
